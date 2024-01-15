@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    min-height: 100%;
+    max-width: 100%;
+}
+nav{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgb(179, 81, 100);
+    width: 100%;
+    height: 10vh;
+}
+nav h1{
+    margin: 1rem;
+
+}
+
+
+section{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.popupoverlay{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+.popupbox h1{
+    text-align: center;
+}
+.popupbox{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 65vh;
+    z-index: 3;
+    border: 2px solid white;
+    background-color:crimson;
+    color: black;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    display: none;
+}
+.popupbox input{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    margin: 1rem;
+    padding: 0.5rem;
+
+}
+.popupbox textarea{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+.book-title-input::placeholder{
+    color: rgba(0,0,0,0.9);
+}
+.book-Author-input::placeholder{
+    color: rgb(0, 0,0,0.9);
+}
+.book-desc-input::placeholder{
+    color: rgba(0,0,0,0.9);
+}
+
+.pop-up-button{
+    font-size: 2rem;
+    border: transparent;
+    background-color:crimson;
+    color: whitesmoke;
+    border-radius:60%;
+    padding: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+
+}
+.popupbox .close{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+    display: inline-block;
+    
+
+}
+.popupbox .add{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin:1rem;    
+    padding: 0.5rem;
+    font-size: 1rem;
+    display: inline-block;
+}
+.book-container{
+    display: inline-block;
+    width:25%;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    border-radius: 10px;
+    margin: 30px;
+
+
+}
+
+.book-container h2{
+    font-size: 1.15rem;
+    text-align: left;
+    margin: 1rem;
+    color: crimson;
+
+}
+.book-container h5{
+    font-size: 0.8rem;
+    text-align: left;
+    margin: 1rem;
+}
+.book-container p{
+    text-align: left;
+    margin: 1rem;
+}
+.book-container button{
+    font-size: 1rem;
+    padding: 0.25rem;
+    margin-right: 70%;
+    border-radius: 15px;
+    background-color: crimson;
+    
+}

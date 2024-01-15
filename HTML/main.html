@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSky App</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <nav>
+        <h1>Book Sky</h1>
+    </nav>
+    
+    <main id="main">
+        <section id="section">
+            <div class="container">
+                <div class="book-container" id="book-container">
+                    <h2>Richard</h2>
+                    <h5>JK.Rowling</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic adipisci dicta repellat laboriosam eum sed fugit, dolore quod quam error, numquam consectetur soluta beatae minima, aut esse optio doloribus cumque.</p>
+                    <button id="delete" type="button" onclick="Delete(event)">Delete</button>
+                </div>
+            </div>
+            <div class="popupoverlay" id="popup"></div>
+            <div class="popupbox" id="popBox">
+                <form id="myForm">
+                    <h1>Add Book</h1>
+                    <input type="text" id="book-title-input" class="book-title-input" placeholder="Book Title">
+                    <input type="text" id="book-Author-input" class="book-Author-input" placeholder="Book Author">
+                    <textarea  id="book-desc-input"  class="book-desc-input" cols="24"   rows="3" placeholder="Book Description"></textarea>
+                    <button class="add" id="add">ADD</button>
+                    <button class="close" id="close">CLOSE</button>
+
+                </form>
+
+            </div>
+            <button class="pop-up-button" id="plus" type="button">+</button>
+        </section>
+    </main>
+</body>
+</html>
