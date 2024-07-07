@@ -6,10 +6,12 @@ var container=document.querySelector(".container");
 var add=document.getElementById("add");
 
 button.addEventListener("click",(event)=>{
+    event.preventDefault();
     popupOverlay.style.display="block"; 
     popupBox.style.display="block";
 })
 close.addEventListener("click",(event)=>{
+    event.preventDefault();
     popupOverlay.style.display="none"; 
     popupBox.style.display="none";
 })
